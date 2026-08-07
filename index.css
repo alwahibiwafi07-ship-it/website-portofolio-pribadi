@@ -1,0 +1,411 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container-fluid a{
+    color: #2d393d;
+    
+}
+.tampilan_atas {
+    background-image: 
+    linear-gradient(to right, rgba(46, 57, 64, 1) 45%, rgba(46, 57, 64, 0) 90%), 
+    url('gambar/Gray\ and\ White\ Modern\ Programmer\ LinkedIn\ Banner\ \(1\).png');
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.judul {
+    max-width: 45%;
+    min-width: 65%;
+    padding: 30px 40px;
+    left: blur();
+}
+.judul h3,h1,p {
+    color: white;
+}
+.judul h3 {
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.judul p {
+    margin-top: 15px;
+}
+.contact {
+    width: 30%;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.contact i {
+    font-size: 30px;
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 3px;
+    color: #2d393d;
+}
+.view_all {
+    color: #f2d398;
+    background-color: #2d393d;
+    padding: auto auto;
+    margin: 5px 20px;
+    max-width: 100px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+    
+
+.fa-arrow-down-long h6{
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 10px;
+    margin-left: 5px;
+}
+.about_me {
+    padding: 60px;
+    margin: 15px;
+    border-radius: 10px;
+}
+.about_me h2{
+    margin: auto;
+    text-align: center;
+    width: 20%;
+    margin-bottom: 20px;
+    border-bottom:2px solid white ;
+}
+.about_me,.about_me h2{
+    background-color: #2d393d;
+    color: white;
+}
+.about_me p {
+    color: white;
+    margin-left: 20px;
+}
+.about_me h5 {
+    margin-bottom: 18px;
+    border-bottom: 1px solid white;
+    padding-left: 10px;
+
+}
+.about_me .p {
+    margin-bottom: 40px;
+}
+.kontainer_utama_projects {
+    width: 100%;
+    padding: 40px;
+    background-color: #2d393d;
+}
+.kontainer_projects {
+    color: #2d393d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.kontainer_utama_projects h2{
+    width: 100%;
+    border: 3px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.card1,.card2,.card3,.card4,.card5,.card6{
+display: inline-block;
+width: 350px;
+margin: 20px 10px;
+background-color: white;
+border: 5px solid #f2d398;
+border-radius: 10px;
+}
+.kontainer_projects img {
+    width: 100%;
+    border-bottom: 2.5px solid #f2d398;
+}
+.kontainer_projects p{
+    color: #2d393d;
+}
+.teks_kartu {
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 35px;
+}
+.teks_kartu h5{
+    padding: 0%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.teks_kartu h6 {
+    margin-top: 20px;
+}
+.teks_kartu .bidng {
+    margin-bottom: 15px;
+    margin-bottom: 15px;
+}
+.teks_kartu .bidang {
+    text-decoration: none;
+    background-color: #f2d398;
+    color: #2d393d;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    width: 25px;
+}
+
+.contact-section {
+  width: 100%;
+  max-width: 1100px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Kiri: Contact Info */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  color: #5126d9;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.title {
+  color: #0f172a;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.description {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #1e293b;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.info-icon {
+  width: 20px;
+  height: 20px;
+  stroke: #5126d9;
+  flex-shrink: 0;
+}
+
+/* Kanan: Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #1e293b;
+  outline: none;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #94a3b8;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #5126d9;
+  box-shadow: 0 0 0 3px rgba(81, 38, 217, 0.1);
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Tombol Submit */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.btn-submit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #5126d9;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-submit:hover {
+  background-color: #421eb5;
+}
+
+.btn-submit:active {
+  transform: scale(0.98);
+}
+
+.btn-icon {
+  width: 16px;
+  height: 16px;
+  stroke: #ffffff;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .form-actions {
+    justify-content: stretch;
+  }
+
+  .btn-submit {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.bidang_keahlian{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.bidang_utama_keahlian {
+    width: 90%;
+    background-color: #f2d398;
+    border: 5px solid #2d393d;
+    color: #2d393d;
+    border-radius: 10px;
+    margin: 10px 5%;
+    padding: 20px;
+}
+.bidang_utama_keahlian .judul_keahlian h2{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.bidang_utama_keahlian h2 {
+    
+ text-align: center;
+ width: 50%;
+ margin-bottom: 40px;
+ border-bottom: 2px solid #2d393d;
+}
+.item_keahlian {
+    background-color: white;
+    border: 3px solid #2d393d;
+    border-radius: 10px;
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.item_keahlian h4 {
+   text-align: center;
+}
+.item_keahlian img{
+    width: 90%;
+    padding: 5%;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    height: 110px;
+}
+.penutup {
+    background-color: #2d393d;
+    color: #f2d398;
+    padding: 5% 60px;
+}
+.penutup p {
+    font-weight: bold;
+}
+.contact_bawah {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+.contact_bawah a {
+    text-decoration: none;
+    color: #2d393d;
+}
+.social-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; 
+}
+.social-item {
+  background-color: white;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}

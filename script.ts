@@ -1,3 +1,27 @@
+const DRAFT_KEY = 'draftPortofolio';
+
+document.getElementById('whatsappForm')!.addEventListener('input', () => {
+    const draft = {
+        name: (document.getElementById('name') as HTMLInputElement).value,
+        noHP: (document.getElementById('noHP') as HTMLInputElement).value,
+        subject: (document.getElementById('subject') as HTMLInputElement).value,
+        message: (document.getElementById('message') as HTMLTextAreaElement).value
+    };
+    localStorage.setItem(DRAFT_KEY, JSON.stringify(draft));
+});
+
+// Isi form dari draft saat halaman dibuka
+window.addEventListener('DOMContentLoaded', () => {
+    const saved = localStorage.getItem(DRAFT_KEY);
+    if (saved) {
+        const draft = JSON.parse(saved);
+        (document.getElementById('name') as HTMLInputElement).value = draft.name || '';
+        (document.getElementById('noHP') as HTMLInputElement).value = draft.noHP || '';
+        (document.getElementById('subject') as HTMLInputElement).value = draft.subject || '';
+        (document.getElementById('message') as HTMLTextAreaElement).value = draft.message || '';
+    }
+});
+
 document.getElementById('whatsappForm')!.addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -26,6 +50,6 @@ document.getElementById('whatsappForm')!.addEventListener('submit', function (e)
 
     window.open(whatsappURL, '_blank');
 
-    (e.target as HTMLFormElement).reset()
+    (e.target as HTMLFormElement).reset();
+    localStorage.removeItem(DRAFT_KEY);
 });
-localStorage.removeItem('pesanPortofolio')

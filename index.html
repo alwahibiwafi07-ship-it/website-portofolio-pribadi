@@ -7,10 +7,10 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index1 (1).css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><h3>Portofolio Alwahibi Wafi</h3></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,33 +21,40 @@ menu
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Projects</a>
-        <a class="nav-link" href="#">Bidang</a>
+        <a class="nav-link active" aria-current="page" href="#tampilan_atas">Home</a>
+        <a class="nav-link" href="#kontainer_utama_projects">Projects</a>
+        <a class="nav-link" href="#bidang_utama_keahlian">Bidang</a>
         <a class="nav-link" href="#contact">Contact</a>
       </div>
     </div>
   </div>
 </nav>
 <main class="kontainer_utama" id="kontainerUtama">
- <div class="tampilan_atas">
+<div class="tampilan_atas" id="tampilan_atas">
     <div class="judul">
-        <h3>Hello,I am</h3>
+        <h3>Hello, I am</h3>
         <h1>Alwahibi Wafi,</h1>
-        <h1> a web developer</h1>
-        <p>"Dari perancangan basis data yang efisienhingga     pembuatan antarmuka pengguna yangresponsif, saya   membangun aplikasi web yang utuh,cepat, aman, dan siap   mendukung pertumbuhan bisnisAnda secara digital."</p>
+        <h1>a web developer</h1>
+        <p>"Dari perancangan basis data yang efisien hingga pembuatan antarmuka pengguna yang responsif, saya membangun aplikasi web yang utuh, cepat, aman, dan siap mendukung pertumbuhan bisnis Anda secara digital."</p>
 
-            <div class="contact">
-            <i class="fa-brands fa-square-whatsapp"></i>
-            <i class="fa-solid fa-envelope"></i>
+        <div class="contact">
+            <a href="https://wa.me/6285194708015" target="_blank">
+              <i class="fa-brands fa-square-whatsapp"></i>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alwahibiwafi07@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
             <i class="fa-brands fa-linkedin"></i>
             <i class="fa-brands fa-square-instagram"></i>
-            </div>
-     </div>
- </div>
-<div class="view_all">
-    <i class="fa-solid fa-arrow-down-long"><h6>View All</h6></i>
+        </div>
+    </div>
+
+    <!-- TAMPAT FOTO PROFIL BARU -->
+    <div class="foto_profil">
+        <img src="gambar/WhatsApp Image 2026-10-01 at 13.10.48.jpeg" alt="Foto Alwahibi Wafi">
+    </div>
 </div>
+
 
 <div class="about_me">
     <h2>About Me</h2>
@@ -66,155 +73,156 @@ menu
     </p>
 </div>
 
-<div class="kontainer_utama_projects">
+<div class="kontainer_utama_projects" id="kontainer_utama_projects">
 
     <div class="judul_project"><h2>Projects</h2></div>
 <div class="kontainer_projects">
+
   <div class="card1" >
-  <img src="gambar/Screenshot 2026-08-06 122213.png" alt="Data siswa">
+  <img src="gambar/Screenshot 2026-09-27 184438.png" alt="Data siswa">
   <div class="teks_kartu">
-    <h5 class="judul">Card title</h5>
-    <p class="teks_card">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <h6>link github</h6>
+        <div class="text_card">
+    <h4 class="judul">Fitur Pencarian Data Siswa</h4>
+    <p class="teks_card">Membuat fungsi yang sering digunakan dalam hidup keseharian. dengan menerapkan konsep Higher Order Function (HOF) dan callback dengan tujuan sebagai mengolahan data yang lebih efisien dalam pengelolaan data di javascript. </p>
+          </div>
+    <div class="footer_card">
+    <h5>link github</h5>
     <a href="#">https://github.com/alwahibiwafi07-ship-it/latihanke5.git</a>
     
-    <h6 class="judul_bidang">Bidang yang diterapkan</h6>
+    <h5 class="judul_bidang">Bidang yang diterapkan : </h5>
     
     <a href="#" class="bidang">Typescript</a>
     <a href="#" class="bidang">HTML</a>
     <a href="#" class="bidang">CSS</a>
-    
+    <a href="#" class="bidang">github</a>
+    </div>
   </div>
   </div>
 
   <div class="card2" >
-  <img src="gambar/Screenshot 2026-08-06 122213.png" alt="Data siswa">
+  <img src="gambar/Screenshot 2026-09-27 184317.png" alt="Data siswa">
   <div class="teks_kartu">
-    <h5 class="judul">Card title</h5>
-    <p class="teks_card">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <h6>link github</h6>
+        <div class="text_card">
+    <h4 class="judul">Penyimpanan Pakai Local Storage</h4>
+    <p class="teks_card">Membuat fungsi submit data yang menerapkan konsep JavaScript tingkat menengah, mulai dari penggunaan Array, Object, Array of Objects, operator, percabangan (conditional), hingga pemanfaatan Local Storage untuk menyimpan data di sisi browser.</p>
+          </div>
+    <div class="footer_card">
+    <h5>link github</h5>
     <a href="#">https://github.com/alwahibiwafi07-ship-it/latihanke5.git</a>
     
-    <h6 class="judul_bidang">Bidang yang diterapkan</h6>
+    <h5 class="judul_bidang">Bidang yang diterapkan : </h5>
     
     <a href="#" class="bidang">Typescript</a>
     <a href="#" class="bidang">HTML</a>
     <a href="#" class="bidang">CSS</a>
-    
+    <a href="#" class="bidang">github</a>
+    </div>
   </div>
   </div>
 
   <div class="card3" >
-  <img src="gambar/Screenshot 2026-08-06 122213.png" alt="Data siswa">
+  <img src="gambar/Screenshot 2026-09-27 183157.png" alt="Data siswa">
   <div class="teks_kartu">
-    <h5 class="judul">Card title</h5>
-    <p class="teks_card">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <h6>link github</h6>
+        <div class="text_card">
+    <h4 class="judul">Website Landing Page</h4>
+    <p class="teks_card">Membuat web landing page yang sederhana, website yang bertujuan untuk penjualan dan promosi product, website yang saya buat ini bertujuan untuk penjual kamar hotel bintang 5 yang berada di benua Eropa.</p>
+          </div>
+    <div class="footer_card">
+    <h5>link github</h5>
     <a href="#">https://github.com/alwahibiwafi07-ship-it/latihanke5.git</a>
     
-    <h6 class="judul_bidang">Bidang yang diterapkan</h6>
+    <h5 class="judul_bidang">Bidang yang diterapkan : </h5>
     
     <a href="#" class="bidang">Typescript</a>
     <a href="#" class="bidang">HTML</a>
     <a href="#" class="bidang">CSS</a>
+    <a href="#" class="bidang">github</a>
+    </div>
     
   </div>
   </div>
 
   <div class="card4" >
-  <img src="gambar/Screenshot 2026-08-06 122213.png" alt="Data siswa">
+  <img src="gambar/Screenshot 2026-09-28 133649.png" alt="Data siswa">
   <div class="teks_kartu">
-    <h5 class="judul">Card title</h5>
-    <p class="teks_card">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <h6>link github</h6>
+        <div class="text_card">
+    <h4 class="judul">Web Protofolio</h4>
+    <p class="teks_card">Website protofolio sederhana yang dengan fitur dan tampilan yang bagus dan lengkap, serta cukup ramah bagi para customer yang ingin melihat dan menghubungi anda melalui website, dengan tampilannya yang sederhana dan tidak terlalu rumit customer anda tentu akan beranggapan menjalin kerjasama dengan anda tidak sesulit yang dibayangkan.</p>
+          </div>
+    <div class="footer_card">
+    <h5>link github</h5>
     <a href="#">https://github.com/alwahibiwafi07-ship-it/latihanke5.git</a>
     
-    <h6 class="judul_bidang">Bidang yang diterapkan</h6>
+    <h5 class="judul_bidang">Bidang yang diterapkan : </h5>
     
     <a href="#" class="bidang">Typescript</a>
     <a href="#" class="bidang">HTML</a>
     <a href="#" class="bidang">CSS</a>
+    <a href="#" class="bidang">github</a>
+    </div>
     
   </div>
   </div>
 
   <div class="card5" >
-  <img src="gambar/Screenshot 2026-08-06 122213.png" alt="Data siswa">
+  <img src="gambar/Screenshot 2026-09-28 112232.png" alt="Data siswa">
   <div class="teks_kartu">
-    <h5 class="judul">Card title</h5>
-    <p class="teks_card">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <h6>link github</h6>
+    <div class="text_card">
+    <h4 class="judul">Web Protofolio Profesional</h4>
+    <p class="teks_card">Website profesional yang dibuat dengan keahlian prompting AI, Website yang kami buat ini bukan dibuat sepenuhnya dari AI karna AI memiliki celah keamanan yang belum memenuhi standar industri jadi kami tidak membuat sekedar asal-asalan kami menjadi ai sebagai alat penyempurna bukan alat yang menjadi kunci utama pembuatan website kami.</p>
+          </div>
+    <div class="footer_card">
+    <h5>link github</h5>
     <a href="#">https://github.com/alwahibiwafi07-ship-it/latihanke5.git</a>
     
-    <h6 class="judul_bidang">Bidang yang diterapkan</h6>
+    <h5 class="judul_bidang">Bidang yang diterapkan : </h5>
     
     <a href="#" class="bidang">Typescript</a>
     <a href="#" class="bidang">HTML</a>
     <a href="#" class="bidang">CSS</a>
+    <a href="#" class="bidang">github</a>
+    <a href="#" class="bidang">prompt AI</a>
+    </div>
     
   </div>
   </div>
 
   <div class="card6" >
-  <img src="gambar/Screenshot 2026-08-06 122213.png" alt="Data siswa">
+  <img src="gambar/Screenshot 2026-09-28 133207.png" alt="Data siswa">
   <div class="teks_kartu">
-    <h5 class="judul">Card title</h5>
-    <p class="teks_card">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-    <h6>link github</h6>
+        <div class="text_card">
+    <h4 class="judul">Web Marketplace</h4>
+    <p class="teks_card">Website marketplace yang diperuntukan bagi semua kalangan termasuk lansia yang minim ilmu teknologi, diwebsite ini kami membuat tampilan dan bahasa yang mudah dipahami customer dan diwebsite marketplace juga semua kalangan mampu penghasilkan uang tanpa takut disaingi oleh perusahaan besar karna promosi untuk jualan disini bisa dilakukan dengan biaya minimum dan bagi yang mau bagi hasil dari mengiklankan product juga mendapatkan komisi yanf fantastic.</p>
+              </div>
+    
+    <div class="footer_card">
+    <h5>link github</h5>
     <a href="#">https://github.com/alwahibiwafi07-ship-it/latihanke5.git</a>
     
-    <h6 class="judul_bidang">Bidang yang diterapkan</h6>
+    <h5 class="judul_bidang">Bidang yang diterapkan : </h5>
     
     <a href="#" class="bidang">Typescript</a>
     <a href="#" class="bidang">HTML</a>
     <a href="#" class="bidang">CSS</a>
-    
+    <a href="#" class="bidang">github</a>
+    <a href="#" class="bidang">prompt AI</a>
+    </div>
   </div>
   </div>
 </div>
 </div>
 
-<section class="contact-section">
-    <div class="contact-container">
-      
-      <div class="contact-info">
-        <span class="subtitle">LET'S CONNECT</span>
-        <h2 class="title">Send Me a Message</h2>
-        <p class="description">
-          Have a project in mind or just want to say hi?<br>
-          Feel free to reach out!
-        </p>
-
-        <div class="info-list">
-          <div class="info-item">
-            <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect width="20" height="16" x="2" y="4" rx="2"/>
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-            </svg>
-            <span>alwahibiwafi07@gmail.com</span>
-          </div>
-
-          <div class="info-item">
-            <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
-              <circle cx="12" cy="10" r="3"/>
-            </svg>
-            <span>Indonesia</span>
-          </div>
-        </div>
-      </div>
-
-      <form 
-  action="https://formsubmit.co/alwahibiwafi07@gmail.com" 
-  method="POST" 
-  class="contact-form"
->
+<form id="whatsappForm" class="contact-form">
+ <div class="contact-header">
+  <h2>Hubungi Saya</h2>
+  <p>Punya ide proyek menarik atau ingin berkolaborasi? Isi formulir di bawah ini untuk langsung terhubung dengan saya via WhatsApp!</p>
+</div>
   <div class="form-row">
     <div class="form-group">
       <input type="text" name="name" id="name" placeholder="Your Name" required />
     </div>
     <div class="form-group">
-      <input type="email" name="email" id="email" placeholder="Your Email" required />
+      <input type="tel" name="noHP" id="noHP" placeholder="Your Handphone" required />
     </div>
   </div>
 
@@ -228,15 +236,12 @@ menu
 
   <div class="form-actions">
     <button type="submit" class="btn-submit">
-      <span>Send Message</span>
+      <span>Send to WhatsApp</span>
     </button>
   </div>
 </form>
 
-    </div>
-  </section>
-
-<div class="bidang_utama_keahlian">
+<div class="bidang_utama_keahlian" id="bidang_utama_keahlian">
     <div class="judul_keahlian"><h2>Bidang Keahlian</h2></div>
 <div class="bidang_keahlian">
     
@@ -259,6 +264,18 @@ menu
     <div class="item_keahlian">
         <img src="gambar/logojs.png" alt="Logo javascript">
         <h4>java Script</h4>
+    </div>  
+    <div class="item_keahlian">
+        <img src="gambar/Bootstrap Logo - Colored - 642x512 - zonalogo.com.png" alt="Logo javascript">
+        <h4>Bootstrap</h4>
+    </div>  
+    <div class="item_keahlian">
+        <img src="gambar/n22ufmook1e5lai4q3gfhh796e.png" alt="Logo javascript">
+        <h4>Git</h4>
+    </div>  
+    <div class="item_keahlian">
+        <img src="gambar/9e398ae83170f8538881a73c4656bd45.png" alt="Logo javascript">
+        <h4>node JS</h4>
     </div>  
 </div>
 </div>

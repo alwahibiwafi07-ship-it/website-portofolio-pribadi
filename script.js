@@ -1,29 +1,26 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-// Menunggu hingga DOM siap
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('contactForm');
-    if (!form)
-        return;
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        // Mengambil elemen input dengan tipe yang spesifik
-        const nameInput = document.getElementById('name');
-        const emailInput = document.getElementById('email');
-        const subjectInput = document.getElementById('subject');
-        const messageInput = document.getElementById('message');
-        // Memasukkan data ke dalam objek ber-type
-        const formData = {
-            name: nameInput.value.trim(),
-            email: emailInput.value.trim(),
-            subject: subjectInput.value.trim(),
-            message: messageInput.value.trim()
-        };
-        // Simulasi pengiriman data
-        console.log('Data yang dikirim:', formData);
-        alert(`Terima kasih, ${formData.name}! Pesan Anda telah terkirim.`);
-        // Reset formulir setelah submit
-        form.reset();
-    });
+document.getElementById('whatsappForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const noHP = document.getElementById('noHP').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    const phoneNumber = "6285194708015";
+    const newMessage = {
+        name: name,
+        noHP: noHP,
+        subject: subject,
+        message: message,
+        timestamp: new Date().toLocaleString()
+    };
+    const existingMessages = JSON.parse(localStorage.getItem('pesanPortofolio') || '[]');
+    existingMessages.push(newMessage);
+    localStorage.setItem('pesanPortofolio', JSON.stringify(existingMessages));
+    const text = `Halo, saya mendapat pesan baru dari website:\n\n*Nama:* ${name}\n*Nomor HP:* ${noHP}\n*Subjek:* ${subject}\n*Pesan:* ${message}`;
+    const encodedText = encodeURIComponent(text);
+    const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedText}`;
+    window.open(whatsappURL, '_blank');
+    e.target.reset();
 });
+localStorage.removeItem('pesanPortofolio');
 //# sourceMappingURL=script.js.map
